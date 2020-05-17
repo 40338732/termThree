@@ -69,23 +69,77 @@ namespace One
 
         private void BtnTwo_Click(object sender, RoutedEventArgs e)
         {
-            // Create a loop out putting odd numbers 
-            int startNumber = 0;
-
-            for(int i = 0; i<100; i++)
+            try
             {
-                startNumber =  i;
+                // Create a loop out putting odd numbers 
+                int startNumber = 0;
+                int numberToGoUpTo;
+                string colours = "";
+                numberToGoUpTo = Int32.Parse(txtOne.Text);
 
-                if( startNumber %2 != 0 )
+                for (int i = 0; i < numberToGoUpTo; i++)
                 {
-                    txtList.Text = txtList.Text + startNumber.ToString() + Environment.NewLine;
+
+                    startNumber = i;
+
+                    if (startNumber % 2 != 0)
+                    {
+                        string[] stringArray = { "Red", "yellow" };
+                        foreach (var colour in stringArray)
+                        {
+                            colours = colour;
+                        }
+
+                        txtList.Text = txtList.Text + startNumber.ToString() +" " + colours + Environment.NewLine ;
+                    }
+
+
+                    List<string> stringList = new List<string>();
+                    stringList.Add("apple");
+                    stringList.Add("Banana");
+                    stringList.Add("Orange");
+
+                    txtList.Text = txtList.Text + stringList[1].ToUpper().ToString();
+
+                    // System.Threading.Thread.Sleep(1000);
+
+                    
+
+
+
+
+
                 }
-
-                // System.Threading.Thread.Sleep(1000);
-
+            }catch(FormatException)
+            {
+                lbMessage.Content = " input isn't a number";
             }
 
            
+
+        }
+
+        private void BtnThree_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Dictionary<int, string> users = new Dictionary<int, string>();
+
+                users.Add(1, "Susan");
+                users.Add(2, "Tony");
+                users.Add(3, "Ben");
+                users.Add(4, "Poppy");
+
+                Random rnd = new Random();
+                int num = rnd.Next(1, 5);
+
+
+                lbMessage.Content = users[num];
+
+            }catch(FormatException)
+            {
+                lbMessage.Content = "incorrect format";
+            }
 
         }
     }
