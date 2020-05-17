@@ -13,11 +13,12 @@
             <ColumnDefinition Width="2*"/>
         </Grid.ColumnDefinitions>
         <Button x:Name="btnClickMe" Content="Click Me" HorizontalAlignment="Left" Margin="265,175,0,0" VerticalAlignment="Top" Width="288" Height="112" Click="BtnClickMe_Click"/>
-        <Label x:Name="lbMessage" Content="New Messsage" HorizontalAlignment="Left" Margin="10,51,0,0" VerticalAlignment="Top" Width="772" FontSize="22" Grid.ColumnSpan="3" Height="95"/>
+        <Label x:Name="lbMessage" Content="New Messsage" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Width="188" FontSize="22" Height="54"/>
         <Button x:Name="btnOne" Content="Number One" HorizontalAlignment="Left" Height="74" Margin="344,306,0,0" VerticalAlignment="Top" Width="139" Click="BtnOne_Click"/>
-        <Button x:Name="btnTwo" Content="Button Two" HorizontalAlignment="Left" Height="74" Margin="550,306,0,0" VerticalAlignment="Top" Width="139"/>
-        <TextBox x:Name="txtOne" HorizontalAlignment="Left" Height="23" Margin="97,324,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtTwo" HorizontalAlignment="Left" Height="23" Margin="97,366,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnTwo" Content="Button Two" HorizontalAlignment="Left" Height="74" Margin="550,306,0,0" VerticalAlignment="Top" Width="139" Click="BtnTwo_Click"/>
+        <TextBox x:Name="txtOne" HorizontalAlignment="Left" Height="23" Margin="603,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtTwo" HorizontalAlignment="Left" Height="23" Margin="603,203,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtList" HorizontalAlignment="Left" Height="369" Margin="10,40,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>

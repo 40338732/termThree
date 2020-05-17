@@ -66,5 +66,27 @@ namespace One
                 lbMessage.Content = " input isn't a number";
             }
         }
+
+        private void BtnTwo_Click(object sender, RoutedEventArgs e)
+        {
+            // Create a loop out putting odd numbers 
+            int startNumber = 0;
+
+            for(int i = 0; i<100; i++)
+            {
+                startNumber =  i;
+
+                if( startNumber %2 != 0 )
+                {
+                    txtList.Text = txtList.Text + startNumber.ToString() + Environment.NewLine;
+                }
+
+                // System.Threading.Thread.Sleep(1000);
+
+            }
+
+           
+
+        }
     }
 }
