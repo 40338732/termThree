@@ -27,7 +27,7 @@ namespace One
 
         private void BtnClickMe_Click(object sender, RoutedEventArgs e)
         {
-
+            lbMessage.Content = "Hello me !!";
         }
     }
 }
