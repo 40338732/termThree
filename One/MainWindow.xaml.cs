@@ -142,6 +142,8 @@ namespace One
                 bool x = users.ContainsKey(num);
                 lbMessage.Content = x.ToString();
 
+                bool y = users.ContainsValue("Ben");
+                lbMessage.Content = y.ToString();
             }catch(FormatException)
             {
                 lbMessage.Content = "incorrect format";
