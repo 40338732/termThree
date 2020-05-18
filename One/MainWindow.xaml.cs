@@ -13,16 +13,20 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace One
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    /// 
+
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
+            
         }
 
         private void BtnClickMe_Click(object sender, RoutedEventArgs e)
@@ -135,12 +139,15 @@ namespace One
 
 
                 lbMessage.Content = users[num];
+                bool x = users.ContainsKey(num);
+                lbMessage.Content = x.ToString();
 
             }catch(FormatException)
             {
                 lbMessage.Content = "incorrect format";
             }
 
+          
         }
     }
 }
