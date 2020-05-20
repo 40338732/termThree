@@ -50,7 +50,7 @@ namespace WpfApp2
         }
 
         // this takes two arguments
-        public Person(string name, string surname)
+        public Version(string name, string surname)
         {
             _state = "stopped";
             Name = name;
