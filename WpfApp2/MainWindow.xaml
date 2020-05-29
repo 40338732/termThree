@@ -7,7 +7,40 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="btnOne" Content="One" HorizontalAlignment="Left" Margin="55,56,0,0" VerticalAlignment="Top" Width="137" Height="56" Click="BtnOne_Click"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <!-- Row 1 -->
+        <TextBlock Text="Text" Grid.Row="0" Grid.Column="0" 
+                   HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Grid.Row="0" Grid.Column="1"
+                   HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="150"/>
+
+        <!-- Row 2 -->
+        <TextBlock Text="Text" Grid.Row="1" Grid.Column="0" 
+                   HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Grid.Row="1" Grid.Column="1"
+                   HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="150"/>
+
+        <!-- Row 3 -->
+        <TextBlock Text="Text" Grid.Row="2" Grid.Column="0" 
+                   HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Grid.Row="2" Grid.Column="1"
+                   HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="150"/>
+
+        <!-- Row 4 -->
+        <TextBlock Text="Text" Grid.Row="3" Grid.Column="0" 
+                   HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Grid.Row="3" Grid.Column="1"
+                   HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="150"/>
 
     </Grid>
 </Window>
